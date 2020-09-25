@@ -39,10 +39,8 @@ ActiveRecord::Schema.define(version: 2020_09_25_185925) do
     t.integer "number_sold"
     t.integer "total_availability"
     t.string "image"
-    t.bigint "cart_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["cart_id"], name: "index_products_on_cart_id"
   end
 
   create_table "reviews", force: :cascade do |t|
@@ -65,7 +63,6 @@ ActiveRecord::Schema.define(version: 2020_09_25_185925) do
     t.string "city"
     t.integer "zip_code"
     t.string "email"
-    t.integer "phone_number"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -73,7 +70,6 @@ ActiveRecord::Schema.define(version: 2020_09_25_185925) do
   add_foreign_key "add_products", "carts"
   add_foreign_key "add_products", "products"
   add_foreign_key "carts", "users"
-  add_foreign_key "products", "carts"
   add_foreign_key "reviews", "products"
   add_foreign_key "reviews", "users"
 end

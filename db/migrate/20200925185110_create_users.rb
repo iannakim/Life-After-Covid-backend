@@ -8,7 +8,6 @@ class CreateUsers < ActiveRecord::Migration[6.0]
       t.string :city 
       t.integer :zip_code
       t.string :email
-      t.integer :phone_number, default: nil
 
       t.timestamps
     end
