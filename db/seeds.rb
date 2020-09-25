@@ -6,16 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-# sername"
-#     t.string "street_address"
-#     t.string "street_address_2"
-#     t.string "city"
-#     t.integer "zip_code"
-#     t.string "email"
-#     t.integer "phone_number"
-#     t.datetime "created_at", precision: 6, null: false
-#     t.datetime "updated_at", precision: 6, null: false
-#   end
+
 
 User.destroy_all
 Cart.destroy_all
@@ -23,9 +14,11 @@ Product.destroy_all
 AddProduct.destroy_all
 Review.destroy_all
 
-
-
-
+# User.reset_pk_sequence
+# Cart.reset_pk_sequence
+# Product.reset_pk_sequence
+# AddProduct.reset_pk_sequence
+# Review.reset_pk_sequence
 
 
 
@@ -40,15 +33,13 @@ product_1 = Product.create(name: "gloves", description: 'white', price: 20, numb
 product_2 = Product.create(name: "masks", description: 'white', price: 20, number_sold: 30, total_availability: 40, image:'coming-soon')
 
 
-addP_1 = AddProduct.create(cart_id: cart_1.id, product_id: product_1.id)
-addP_2 = AddProduct.create(cart_id: cart_2.id, product_id: product_2.id)
+addP_1 = AddProduct.create(cart_id: cart_1.id, product_id: product_1.id, quantity: 3)
+addP_2 = AddProduct.create(cart_id: cart_2.id, product_id: product_2.id, quantity: 2)
 
 
 
 rev_1 = Review.create(user_id: user_1.id, product_id: product_1.id, content: "Great gloves", nickname: "Banana", star_rating: 4)
 rev_2 = Review.create(user_id: user_1.id, product_id: product_2.id, content: "sucks ", nickname: "Banana", star_rating: 4)
-
-
 rev_3 = Review.create(user_id: user_2.id, product_id: product_1.id, content: "so so", nickname: "appple", star_rating: 2)
 rev_4 = Review.create(user_id: user_2.id, product_id: product_2.id, content: "I wanted them on black", nickname: "apple", star_rating: 5)
 

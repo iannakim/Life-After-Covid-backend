@@ -45,6 +45,7 @@ GEM
     activerecord (6.0.3.3)
       activemodel (= 6.0.3.3)
       activesupport (= 6.0.3.3)
+    activerecord_reset_pk_sequence (0.3.0)
     activestorage (6.0.3.3)
       actionpack (= 6.0.3.3)
       activejob (= 6.0.3.3)
@@ -149,6 +150,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activerecord_reset_pk_sequence
   bootsnap (>= 1.4.2)
   byebug
   listen (~> 3.2)
