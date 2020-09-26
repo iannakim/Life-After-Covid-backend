@@ -26,11 +26,11 @@ cart_1 = Cart.create(user_id: user_1.id, history: false)
 cart_2 = Cart.create(user_id: user_2.id, history: false)
 
 
-cat_1 = Category.create(name: 'mask')
+cat_1 = Category.create(name: 'gloves')
 
 
-product_1 = Product.create(name: "doggy-gloves", description: 'white', price: 20, number_sold: 30, total_availability: 40, image:'coming-soon', category_id: cat_1.id)
-product_2 = Product.create(name: "doggy-mask", description: 'white', price: 20, number_sold: 30, total_availability: 40, image:'coming-soon', category_id: cat_1.id)
+product_1 = Product.create(name: "white gloves", description: 'white gloves one size fits all', price: 20, number_sold: 30, total_availability: 40, image:'https://cdn.shopify.com/s/files/1/0074/1225/2741/products/2020-03-11_113831_900x900.png?v=1583961025', category_id: cat_1.id)
+product_2 = Product.create(name: "blue gloves", description: 'blue gloves, fight the virus', price: 20, number_sold: 30, total_availability: 40, image:'https://dgzfssf1la12s.cloudfront.net/original/4cda74c7-7b7a-4944-828a-2177d76bee10-40982-pc', category_id: cat_1.id)
 
 
 addP_1 = AddProduct.create(cart_id: cart_1.id, product_id: product_1.id, quantity: 3)
