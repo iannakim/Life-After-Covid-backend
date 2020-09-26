@@ -7,6 +7,7 @@ class CreateProducts < ActiveRecord::Migration[6.0]
       t.integer :number_sold
       t.integer :total_availability
       t.string :image
+      t.belongs_to :category, null: false, foreign_key: true
 
       t.timestamps
     end

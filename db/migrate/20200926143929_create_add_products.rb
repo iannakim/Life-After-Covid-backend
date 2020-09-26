@@ -3,6 +3,7 @@ class CreateAddProducts < ActiveRecord::Migration[6.0]
     create_table :add_products do |t|
       t.belongs_to :cart, null: false, foreign_key: true
       t.belongs_to :product, null: false, foreign_key: true
+      t.integer :quantity
 
       t.timestamps
     end

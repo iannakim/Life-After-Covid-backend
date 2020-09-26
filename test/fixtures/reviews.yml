@@ -2,8 +2,14 @@
 
 one:
   user: one
-  product: MyString
+  product: one
+  content: MyString
+  star_raiting: 1
+  nickname: MyString
 
 two:
   user: two
-  product: MyString
+  product: two
+  content: MyString
+  star_raiting: 1
+  nickname: MyString

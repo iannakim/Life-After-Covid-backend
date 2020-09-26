@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_25_215928) do
+ActiveRecord::Schema.define(version: 2020_09_26_144024) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -18,9 +18,9 @@ ActiveRecord::Schema.define(version: 2020_09_25_215928) do
   create_table "add_products", force: :cascade do |t|
     t.bigint "cart_id", null: false
     t.bigint "product_id", null: false
+    t.integer "quantity"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "quantity"
     t.index ["cart_id"], name: "index_add_products_on_cart_id"
     t.index ["product_id"], name: "index_add_products_on_product_id"
   end
@@ -33,6 +33,12 @@ ActiveRecord::Schema.define(version: 2020_09_25_215928) do
     t.index ["user_id"], name: "index_carts_on_user_id"
   end
 
+  create_table "categories", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "products", force: :cascade do |t|
     t.string "name"
     t.string "description"
@@ -40,16 +46,18 @@ ActiveRecord::Schema.define(version: 2020_09_25_215928) do
     t.integer "number_sold"
     t.integer "total_availability"
     t.string "image"
+    t.bigint "category_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["category_id"], name: "index_products_on_category_id"
   end
 
   create_table "reviews", force: :cascade do |t|
     t.bigint "user_id", null: false
     t.bigint "product_id", null: false
     t.string "content"
-    t.string "nickname"
     t.integer "star_rating"
+    t.string "nickname"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["product_id"], name: "index_reviews_on_product_id"
@@ -71,6 +79,7 @@ ActiveRecord::Schema.define(version: 2020_09_25_215928) do
   add_foreign_key "add_products", "carts"
   add_foreign_key "add_products", "products"
   add_foreign_key "carts", "users"
+  add_foreign_key "products", "categories"
   add_foreign_key "reviews", "products"
   add_foreign_key "reviews", "users"
 end

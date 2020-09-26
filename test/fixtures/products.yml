@@ -6,8 +6,8 @@ one:
   price: 1
   number_sold: 1
   total_availability: 1
-  image_url: MyString
-  cart: one
+  image: MyString
+  category: one
 
 two:
   name: MyString
@@ -15,5 +15,5 @@ two:
   price: 1
   number_sold: 1
   total_availability: 1
-  image_url: MyString
-  cart: two
+  image: MyString
+  category: two
