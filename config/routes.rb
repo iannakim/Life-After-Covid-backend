@@ -6,7 +6,8 @@ Rails.application.routes.draw do
  
   # resources :carts
   # resources :users
-
+# get '/reviews', to: 'reviews#index'
+post '/reviews', to: 'reviews#create'
 get '/categories', to: 'categories#index'
 get '/categories/:id', to: 'categories#show'
 

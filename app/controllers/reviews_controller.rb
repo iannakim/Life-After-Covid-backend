@@ -6,20 +6,27 @@ class ReviewsController < ApplicationController
     end 
 
     def show 
-        @review = @review.find(params[:id])
+        @review = Review.find(params[:id])
         render json: @review
     end 
-
+    
+    
 
     def create
+        # byebug
         @review = Review.create(review_params)
+        # @review = Review.create(nickname: params[:review][:nickname] )
         render json: @review
     end 
+
+    
 
     private 
 
     def review_params 
-        params.require[:user_id, :product_id, :content, :star_rating, :nickname]
+        params.require(:user_id, :product_id, :content, :star_rating, :nickname)
+        # params.require(:content, :nickname)
+
     end 
     
 end
