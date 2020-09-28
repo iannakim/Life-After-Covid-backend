@@ -67,20 +67,19 @@ pet3 = Product.create(name: "Do Not Pet Dog Bandana", price: 11, description: "L
 # addP_1 = AddProduct.create(cart_id: cart_1.id, product_id: product_1.id, quantity: 3)
 # addP_2 = AddProduct.create(cart_id: cart_2.id, product_id: product_2.id, quantity: 2)
 
-######################## REVIEWS #################################################
-
-# rev_1 = Review.create(user_id: user_1.id, product_id: product_1.id, content: "Great gloves", nickname: "Banana", star_rating: 4)
-# rev_2 = Review.create(user_id: user_1.id, product_id: product_2.id, content: "sucks ", nickname: "Banana", star_rating: 4)
-# rev_3 = Review.create(user_id: user_2.id, product_id: product_1.id, content: "so so", nickname: "appple", star_rating: 2)
-# rev_4 = Review.create(user_id: user_2.id, product_id: product_2.id, content: "I wanted them on black", nickname: "apple", star_rating: 5)
-
-
 
 ######################## USERS ###################################################
 
 user_1 = User.create(name: 'Anna', username: 'Master', street_address: "Main st", street_address_2: "Apt 4M", city: "Queens", zip_code: 12345)
 user_2 = User.create(name: 'Franklin', username: 'Breaking-Conventions', street_address: "Lonely Rd.", street_address_2: "Apt Z", city: "Flushing", zip_code: 11345)
 
+
+######################## REVIEWS #################################################
+
+rev_1 = Review.create(user_id: user_1.id, product_id: pet1.id, content: "Great gloves", nickname: "Banana", star_rating: 4)
+rev_2 = Review.create(user_id: user_1.id, product_id: mask1.id, content: "sucks ", nickname: "Banana", star_rating: 4)
+rev_3 = Review.create(user_id: user_2.id, product_id: pet1.id, content: "so so", nickname: "appple", star_rating: 2)
+rev_4 = Review.create(user_id: user_2.id, product_id: mask1.id, content: "I wanted them on black", nickname: "apple", star_rating: 5)
 
 
 

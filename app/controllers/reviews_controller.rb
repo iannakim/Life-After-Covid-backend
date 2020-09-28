@@ -10,9 +10,10 @@ class ReviewsController < ApplicationController
         render json: @review
     end 
 
+
     def create
         @review = Review.create(review_params)
-        # redirect to 
+        render json: @review
     end 
 
     private 

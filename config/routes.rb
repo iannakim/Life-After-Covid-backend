@@ -10,5 +10,6 @@ Rails.application.routes.draw do
 get '/categories', to: 'categories#index'
 get '/categories/:id', to: 'categories#show'
 
+
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
