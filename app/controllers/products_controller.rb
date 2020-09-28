@@ -11,7 +11,7 @@ class ProductsController < ApplicationController
     end 
 
     # No need for create, new update, nor delete for products
-    def create 
+    def create
     end 
 
     private 
