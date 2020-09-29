@@ -10,11 +10,9 @@ class ReviewsController < ApplicationController
         render json: @review
     end 
     
-    
 
     def create
         @review = Review.create!(review_params)
-        # @review = Review.create(nickname: params[:review][:nickname] )
         render json: @review
     end 
 
