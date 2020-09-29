@@ -10,6 +10,8 @@ Rails.application.routes.draw do
 post '/reviews', to: 'reviews#create'
 get '/categories', to: 'categories#index'
 get '/categories/:id', to: 'categories#show'
+post '/addProducts', to: 'add_products#create'
+get '/carts', to: 'carts#index'
 
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
