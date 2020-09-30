@@ -10,12 +10,25 @@ Rails.application.routes.draw do
 
 get '/categories', to: 'categories#index'
 get '/categories/:id', to: 'categories#show'
+
+
 post '/addProducts', to: 'add_products#create'
-get '/carts', to: 'carts#index'
+
 
 post '/reviews', to: 'reviews#create'
+
+
 post '/users', to: 'users#create'
 post '/login', to: 'users#login'
+
+
+get '/carts', to: 'carts#index'
+post '/findcart', to: 'carts#findUserCart'
+post '/cart', to: 'carts#create'
+
+
+
+
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
