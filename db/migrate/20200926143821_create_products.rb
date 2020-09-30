@@ -4,8 +4,6 @@ class CreateProducts < ActiveRecord::Migration[6.0]
       t.string :name
       t.string :description
       t.integer :price
-      t.integer :number_sold
-      t.integer :total_availability
       t.string :image
       t.belongs_to :category, null: false, foreign_key: true
 
