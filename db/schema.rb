@@ -43,6 +43,8 @@ ActiveRecord::Schema.define(version: 2020_09_30_160751) do
     t.string "name"
     t.string "description"
     t.integer "price"
+    t.integer "number_sold"
+    t.integer "total_availability"
     t.string "image"
     t.bigint "category_id", null: false
     t.datetime "created_at", precision: 6, null: false

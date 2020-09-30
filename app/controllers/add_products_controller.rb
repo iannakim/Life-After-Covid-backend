@@ -9,6 +9,10 @@ class AddProductsController < ApplicationController
         @add_product = AddProduct.find(params[:id])
         render json: @add_product
     end 
+
+    def test 
+        puts 'hello'
+    end 
     
     
     def create

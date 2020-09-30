@@ -26,6 +26,8 @@ get '/carts', to: 'carts#index'
 post '/findcart', to: 'carts#findUserCart'
 post '/cart', to: 'carts#create'
 
+get '/carts/:id', to: 'carts#show'
+
 
 
 
