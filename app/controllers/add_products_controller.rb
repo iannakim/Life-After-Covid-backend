@@ -9,16 +9,17 @@ class AddProductsController < ApplicationController
         @add_product = AddProduct.find(params[:id])
         render json: @add_product
     end 
-
-    def test 
-        puts 'hello'
-    end 
     
     
     def create
         @add_product = AddProduct.create!(add_product_params)
         render json: @add_product
     end 
+
+    def remove
+        @add_product = AddProduct.find(params[:id])
+        @add_product.destroy
+    end
 
     private 
 

@@ -13,7 +13,7 @@ get '/categories/:id', to: 'categories#show'
 
 
 post '/addProducts', to: 'add_products#create'
-
+delete '/removeitem', to: 'add_products#remove'
 
 post '/reviews', to: 'reviews#create'
 
