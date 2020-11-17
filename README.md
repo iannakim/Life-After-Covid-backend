@@ -72,10 +72,3 @@ Users can navigate through a list of PPE products and select the products they w
  * [Anna Kim](https://github.com/iannakim)
  * [Franklin Bado](https://github.com/fbado66)
  
-## Acknowledgements
- We would like to thank:
-  * Eric Kim
-  * Sylwia Vargas
-  * Annie Zheng
-  * Isabel K. Lee
-  * the Code Bender Cohort
