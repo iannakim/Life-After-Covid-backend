@@ -5,6 +5,19 @@ Life After Covifd is a (SPA) single-page e-commerce web application that allows 
 The inspiration of this app came to us while brainstorming for ideas on what problems we can attemp to resolve during this diffcult time. The products displayed in here have become neccessary items in our every day life. <br>
 Users can navigate through a list of PPE products and select the products they wish to purchase. Once they click on each product they will see a description, reviews about the selected products submitted by other users, and the option to submit their own review and to add it to a cart.
 
+## Set Up
+ Part 1 (backend):
+ * Clone this repo into your local computer --git clone
+ * cd into the repo run 'bundle install' to install all dependencies
+ * Run 'rails db:migrate' to set up all the tables
+ * Run 'rails db:seed' to seed the data
+ * Run 'rails s' to start the server
+ 
+ Part 2 (frontend):
+ * Go to this <a href = "https://github.com/iannakim/Life-After-Covid-frontend"> repo </a> and clone it down to your local computer -- git clone
+ * cd into the repo
+ * Run 'open index.html' in your terminal and start the app on localhost:3000!
+
 ## Features
 
 ### Serializers
@@ -54,21 +67,6 @@ See <a href = "https://github.com/iannakim/Life-After-Covid-frontend/blob/master
  * Add review average on each product
  * Update user information
  * Allow users to upload a profile picture
- 
- ## Set-up for running the app
- 
- Part 1 (backend):
- * Clone this repo into your local computer --git clone
- * cd into the repo run 'bundle install' to install all dependencies
- * Run 'rails db:migrate' to set up all the tables
- * Run 'rails db:seed' to seed the data
- * Run 'rails s' to start the server
- 
- Part 2 (frontend):
- * Go to this <a href = "https://github.com/iannakim/Life-After-Covid-frontend"> repo </a> and clone it down to your local computer -- git clone
- * cd into the repo
- * Run 'open index.html' in your terminal and start the app on localhost:3000!
- 
  
 ## Contributors
  * [Anna Kim](https://github.com/iannakim)
