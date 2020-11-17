@@ -26,14 +26,10 @@ Users can navigate through a list of PPE products and select the products they w
  * There are 6 models that have the following associations ```has_many, belongs_to and has_many, through: ```
 
 ## Domain Model
-<img src='FRONTEND/image/ERD.png'> </img>
+See <a href = "https://github.com/iannakim/Life-After-Covid-frontend/blob/master/README.md">  frontend repo </a> for images
 
 ## Med-Fi Wireframes
-
-<img src='FRONTEND/image/wireframe1.png'> </img>
-<img src='FRONTEND/image/wireframe4.png'> </img>
-<img src='FRONTEND/image/wireframe2.png'> </img>
-<img src='FRONTEND/image/wireframe3.png'> </img>
+See <a href = "https://github.com/iannakim/Life-After-Covid-frontend/blob/master/README.md">  frontend repo </a> for images
 
 ## Tech Stack
  * Ruby on Rails
@@ -61,11 +57,17 @@ Users can navigate through a list of PPE products and select the products they w
  
  ## Set-up for running the app
  
- * Clone this <a href = "https://github.com/fbado66/Mod_3-back-end-Api"> repo </a> into your local computer
- * cd into the repository you just cloned and run bundle install in the command line to ensure all the gems are set in your local system 
- * run rails db:migrate to migrate all the tables for the backend 
- * run rails db:seed, to create the seed data
- * open index.html from this <a href = "https://github.com/iannakim/Mod-3-Project"> repo </a> and you can start testing the SPA
+ Part 1 (backend):
+ * Clone this repo into your local computer --git clone
+ * cd into the repo run 'bundle install' to install all dependencies
+ * Run 'rails db:migrate' to set up all the tables
+ * Run 'rails db:seed' to seed the data
+ * Run 'rails s' to start the server
+ 
+ Part 2 (frontend):
+ * Go to this <a href = "https://github.com/iannakim/Life-After-Covid-frontend"> repo </a> and clone it down to your local computer -- git clone
+ * cd into the repo
+ * Run 'open index.html' in your terminal and start the app on localhost:3000!
  
  
 ## Contributors
