@@ -18,6 +18,9 @@ Users can navigate through a list of PPE products and select the products they w
  * cd into the repo
  * Run 'open index.html' in your terminal and start the app on localhost:3000!
 
+## Screenshots & Domain Model
+Please see <a href = "https://github.com/iannakim/Life-After-Covid-frontend/blob/master/README.md">  frontend repo </a> 
+
 ## Features
 
 ### Serializers
@@ -37,12 +40,6 @@ Users can navigate through a list of PPE products and select the products they w
   
 ### Active Record Associations
  * There are 6 models that have the following associations ```has_many, belongs_to and has_many, through: ```
-
-## Domain Model
-See <a href = "https://github.com/iannakim/Life-After-Covid-frontend/blob/master/README.md">  frontend repo </a> for images
-
-## Med-Fi Wireframes
-See <a href = "https://github.com/iannakim/Life-After-Covid-frontend/blob/master/README.md">  frontend repo </a> for images
 
 ## Tech Stack
  * Ruby on Rails
