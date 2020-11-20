@@ -43,6 +43,9 @@ The inspiration of this app came while brainstorming for ideas help people cope 
 ## Screenshots & Domain Model
 Please see <a href = "https://github.com/iannakim/Life-After-Covid-frontend/blob/master/README.md">  frontend repo </a> 
  
+## Build Status
+* This project was completed in 5 days for the purpose of the project presentation.
+
 ## Future Features for Improvement
    * Improve design elements (look of buttons, background image, text manipulation)
    * Create a chekout Function
