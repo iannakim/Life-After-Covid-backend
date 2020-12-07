@@ -11,6 +11,13 @@ AddProduct.destroy_all
 Review.destroy_all
 Category.destroy_all
 
+User.reset_pk_sequence
+Cart.reset_pk_sequence
+Product.reset_pk_sequence
+AddProduct.reset_pk_sequence
+Review.reset_pk_sequence
+Category.reset_pk_sequence
+
 ###################### CATEGORIES #################################################
 
 gowns = Category.create(name: "Gowns")
@@ -39,7 +46,7 @@ mask9 = Product.create(name: "Pokemon Mask with Pikachu Print", price: 17, descr
 mask10 = Product.create(name: "Neutral Cream Beige Face Masks (Set of 2)", price: 20, description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", image: "https://i.etsystatic.com/23014560/r/il/e570a3/2481879785/il_794xN.2481879785_dsdd.jpg" , category_id: masks.id)
 
 glove1 = Product.create(name: "Powderfree Blue Nitrile Gloves (Pack of 200)", price: 50, description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", image: "https://www.secaretrade.com/product_images/Medium/Blue%20Nitrile%20Gloves%20-%20Powder%20Free.jpg" , category_id: gloves.id)
-glove2 = Product.create(name: "Powderfree White Nitrile Gloves (Pack of 200)", price: 45, description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", image: "https://www.secaretrade.com/product_images/Medium/A09-0521A.png" , category_id: gloves.id)
+glove2 = Product.create(name: "Powderfree White Nitrile Gloves (Pack of 200)", price: 45, description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", image: "https://www.envirosafetyproducts.com/media/product/b06/white-nitrile-exam-gloves-721.jpg" , category_id: gloves.id)
 glove3 = Product.create(name: "Powderfree Vinyl Gloves (Pack of 100)", price: 30, description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", image: "https://www.secaretrade.com/product_images/Medium/A09-0421.jpg" , category_id: gloves.id)
 
 sani1 = Product.create(name: "Hand Sanitizer", price: 7, description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", image: "https://cdn.shopify.com/s/files/1/2974/6610/products/public-goods-hand-sanitizer-859982_1024x1024@2x.jpg" , category_id: sanitizers.id)
@@ -70,8 +77,8 @@ pet3 = Product.create(name: "Do Not Pet Dog Bandana", price: 11, description: "L
 
 ######################## USERS ###################################################
 
-user_1 = User.create(name: 'Anna', username: 'Master', street_address: "Main st", street_address_2: "Apt 4M", city: "Queens", zip_code: 12345)
-user_2 = User.create(name: 'Franklin', username: 'Breaking-Conventions', street_address: "Lonely Rd.", street_address_2: "Apt Z", city: "Flushing", zip_code: 11345)
+user_1 = User.create(name: 'Anna', username: 'demo1', street_address: "Main st", street_address_2: "Apt 4M", city: "Queens", zip_code: 12345)
+user_2 = User.create(name: 'Franklin', username: 'demo2', street_address: "Lonely Rd.", street_address_2: "Apt Z", city: "Flushing", zip_code: 11345)
 
 
 ######################## REVIEWS #################################################
