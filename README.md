@@ -1,5 +1,5 @@
 # Life After Covid
-*Live Demo Coming Soon!*
+Check out the <a href="https://youtu.be/Krfr_3usRQk"> demo here </a>🎬
 
 Life After Covifd is a (SPA) single-page e-commerce web application that allows users to purchase PPE products. <br>
 The inspiration of this app came while brainstorming for ideas help people cope through this diffcult time during COVID. The products displayed on the app have become a neccessary part of our every day lives.
